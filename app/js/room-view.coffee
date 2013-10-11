@@ -5,10 +5,15 @@ class @RoomView
     @$message.closest('form').submit =>
       @say()
       false
+    @$history = @$page.find("#history")
 
   say: ->
     message = @$message.val()
     @room.say(message)
     @$message.val('')
-    #console.log("said "+message)
-    #console.log("heard "+@room.hear())
+    @refreshHistory()
+
+  refreshHistory: ->
+    @$history.empty()
+    for heard in @room.hear()
+      @$history.append($('<li></li>').text(heard))

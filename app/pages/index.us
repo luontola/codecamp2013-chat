@@ -10,6 +10,8 @@
   <body>
     <h1><%= pkg.name %></h1>
 
+    <ul id="history"></ul>
+
     <form>
       <input type="text" id="message">
       <input type="submit" value="Say">
