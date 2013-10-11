@@ -9,5 +9,6 @@ class @RoomView
   say: ->
     message = @$message.val()
     @room.say(message)
+    @$message.val('')
     #console.log("said "+message)
-    console.log("heard "+@room.hear())
+    #console.log("heard "+@room.hear())

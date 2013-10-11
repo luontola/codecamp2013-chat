@@ -13,3 +13,6 @@ describe "RoomView", ->
   describe "Can say things in the room", ->
     When -> @$message.val('things').submit()
     Then -> expect(@room.say).toHaveBeenCalledWith('things')
+
+    describe "After a thing has been said, there is no point in saing it again", ->
+      Then -> @$message.val() == ''
