@@ -1,7 +1,8 @@
 describe "RoomView", ->
   Given ->
     @$page = $('<div></div>')
-    @$message = @$page.affix('input#message')
+    @$form = @$page.affix('form input#message')
+    @$message = @$form.find('#message')
     #console.log(@$page.html())
   Given ->
     @room = new Room()
