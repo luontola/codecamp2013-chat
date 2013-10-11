@@ -9,6 +9,6 @@ describe "RoomView", ->
   Given ->
     @subject = new RoomView(@$page, @room)
 
-  describe "Can say things in a room", ->
+  describe "Can say things in the room", ->
     When -> @$message.val('things').submit()
     Then -> expect(@room.say).toHaveBeenCalledWith('things')

@@ -4,6 +4,6 @@ class @Room
     @messages = []
 
   say: (message) ->
-    @messages.push(message)
+    @messages.push(message) if message
 
   hear: -> @messages
