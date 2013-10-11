@@ -1,11 +1,11 @@
 {
-  "name": "sandbox",
-  "title": "An HTML/JS/CSS app",
+  "name": "Chat",
+  "title": "A simple chat app",
   "version": "0.0.1",
   "private": true,
   "author": {
-    "name": "John Doe",
-    "company": "ACME, Inc."
+    "name": "Esko Luontola",
+    "company": "Solita Oy"
   },
   "devDependencies": {
     "lineman": "~0.14.5"
